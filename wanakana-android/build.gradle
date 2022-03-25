@@ -1,18 +1,18 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 android {
 
-  compileSdkVersion 15
-  buildToolsVersion "23.0.1"
+  compileSdkVersion 31
+  buildToolsVersion "23.0.3"
 
   defaultConfig {
-      minSdkVersion 14
-      targetSdkVersion 15
+      minSdkVersion 21
+      targetSdkVersion 31
       versionCode 1
       versionName "1.0"
   }
 }
 
 dependencies {
-    compile project(':wanakana-core')
+    implementation project(':wanakana-core')
 }
